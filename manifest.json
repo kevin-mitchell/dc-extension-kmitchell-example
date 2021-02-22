@@ -1,7 +1,7 @@
 {
   "name": "dc-extension-kmitchell-example",
   "short_name": "dc-extension-kmitchell-example",
-  "start_url": "/",
+  "start_url": "/dc-extension-kmitchell-example/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
