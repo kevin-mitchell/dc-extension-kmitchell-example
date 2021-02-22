@@ -1,19 +1,7 @@
 # dc-extension-kmitchell-example
 
-## CLI Commands
-*   `npm install`: Installs dependencies
+An extremely simple Amplience DC Extension example. 
 
-*   `npm run dev`: Run a development, HMR server
+Goal was to just get something deployed / working in Amplience. A stretch goal was to integrate [InversifyJS](https://github.com/inversify/InversifyJS) to allow components to inject the Amplience SDK / `ContentFieldExtension` into components to avoid sticking the sdk on the global / window object as the Amplience documentation does.
 
-*   `npm run serve`: Run a production-like server
-
-*   `npm run build`: Production-ready build
-
-*   `npm run lint`: Pass TypeScript files using ESLint
-
-*   `npm run test`: Run Jest and Enzyme with
-    [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure) for
-    your tests
-
-
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+See: `src/components/app.tsx` and `src/di/services.container.ts`.
