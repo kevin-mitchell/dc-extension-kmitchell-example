@@ -34,7 +34,7 @@ container.bind('AmplienceSDK').toDynamicValue((context: interfaces.Context) => {
 });
 
 container.bind('AmplienceSDKProvider').toProvider<ContentFieldExtension<FieldModel, Parameters>>((context: interfaces.Context) => {
-    console.log("ok...");
+    console.log("Amplience SDK Provider factory was called");
     return () => {
         return init<ContentFieldExtension<FieldModel, Parameters>>();  
     }    

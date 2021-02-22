@@ -36,19 +36,17 @@ export default class App extends Component<Props, State> {
       if (this.storageService) {
       }
       if (this.amplienceSDK) {
-        console.log("yep...");
+        console.log("amplience SDK promise has been injected though", "@lazyInject('AmplienceSDK') amplienceSDK?: Promise<any>;");
         try {          
-          console.log("amplienceSDK", this.amplienceSDK);
           this.amplienceSDK.then((sdk: any) => {
-            console.log("asdfasda");
-            console.log("value", sdk.field.getValue());
+            console.log("amplience SDK has been initialized through injected promise.");
+            console.log("random field value example", sdk.field.getValue().then((result: any) => console.log(result)));
           }).catch(error => console.log(error));
         } catch(exception) {
           console.log(exception);
         }
                 
       }
-    console.log("OK");
   }
 
   render({ value, optionalValue }: Props, { useOptional }: State) {
