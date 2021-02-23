@@ -28,13 +28,12 @@ export default class KevinExampleOne extends Component<any, any> {
         if (this.storageService) {
         }
         
-        if (this.amplienceSDKReplaySubject) {
-          console.log("truthy [amplienceSDKReplaySubject]");
+        if (this.amplienceSDKReplaySubject) {          
           this.amplienceSDKReplaySubject.subscribe(extension => {      
             this.setState({params: JSON.stringify(extension.params)});                  
             console.log("next on ReplaySubject<ContentFieldExtension<any,any>>");
             extension.field.setValue(15).then(field => {            
-              console.log("field value setValue(15) called with result", field);
+              
             });
             extension.field.getValue();
           });

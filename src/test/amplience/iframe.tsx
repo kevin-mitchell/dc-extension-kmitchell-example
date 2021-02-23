@@ -31,10 +31,10 @@ export default class Iframe extends Component<any, any> {
             const connection = new ServerConnection(document.getElementById("iframe") as any);
             
             connection.on("mc-handshake", (data: any) => {
-                console.log(data);
+                // console.log(data);
             });
       
-            connection.on("field-model-set", (data: any) => {
+            connection.on("field-model-set", (data: any, resolve: Function) => {
                 this.props.fieldSetFunction(data);
             });
                   
@@ -48,7 +48,6 @@ export default class Iframe extends Component<any, any> {
             
           }, []) 
         
-
       return (
         <div>          
             <iframe id="iframe" src={this.props.src}/>         
