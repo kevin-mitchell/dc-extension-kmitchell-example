@@ -24,8 +24,10 @@
   },
   "dependencies": {
     "dc-extensions-sdk": "^2.0.0",
+    "history": "^5.0.0",
     "inversify": "^5.0.5",
     "inversify-inject-decorators": "^3.1.0",
+    "message-event-channel": "^1.1.0",
     "preact": "^10.3.1",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1",
