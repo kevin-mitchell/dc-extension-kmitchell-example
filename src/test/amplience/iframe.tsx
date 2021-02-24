@@ -14,12 +14,6 @@ export default class Iframe extends Component<any, any> {
         params: ""
       };
     }
-
-    // setSrc(src: string) {
-    //     // this.setState({
-    //     //     src: src
-    //     // })
-    // }
   
     componentWillMount() {        
     }
